@@ -30,15 +30,8 @@ namespace csharp_lista_indirizzi
         public string City { get; set; }
 
         private string province;
-        public string Province { get { return province; } set 
-            {
-                if(value.Length != 2)
-                {
-                    throw new ArgumentException("La provincia deve essere di 2 caratteri");
-                }
-                province = value;
-            } 
-        }
+        public string Province { get; set; }
+            
         public int ZIP { get; set; }
    
 
